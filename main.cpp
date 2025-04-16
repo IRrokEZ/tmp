@@ -1,22 +1,83 @@
-#include "transport_catalogue.h"
-#include "json_reader.h"
-#include "json.h"
-
 #include <iostream>
+#include <string>
 
-int main() {
-    auto doc = json::Load(std::cin);
-    const auto& root_map = doc.GetRoot().AsMap();
+#include "input_reader.h"
+#include "stat_reader.h"
+#include "transport_catalogue.h"
+
+#include <chrono>
+#include <fstream>
+
+int64_t FileTest (const std::string &filename, int n1, int n2) {
+    std::ifstream in_file(filename);
+    if (!in_file) {
+        std::cerr << "Failed file open" << std::endl;
+    }    
+
+    std::ofstream outp("output.txt");
+
+    auto start = std::chrono::high_resolution_clock::now();
+
+    TransportCatalogue catalogue;
+
+    int base_request_count = n1;
+
+    {
+        input_reader::InputReader reader;
+        for (int i = 0; i < base_request_count; ++ i) {
+            std::string line;
+            std::getline(std::cin, line);
+            reader.ParseLine(line);
+        }
+        reader.ApplyCommands(catalogue);
+    }
+
+    int stat_request_count = n2;
     
-    transport_catalogue::TransportCatalogue catalogue;
-    json_reader::ProcessBaseRequests(root_map.at("base_requests").AsArray(), catalogue);
+    for (int i = 0; i < stat_request_count; ++ i) {
+        std::string line;
+        std::getline(in_file, line);
+        ParseAndPrintStat(catalogue, line, outp);
+    }
+
+    in_file.close();
+    outp.close();
+
+    auto end = std::chrono::high_resolution_clock::now();
+    auto duration = std::chrono::duration_cast<std::chrono::microseconds>(end - start);
     
-    auto responses = json_reader::ProcessStatRequests(
-        catalogue, 
-        root_map.at("stat_requests").AsArray()
-    );
-    
-    json::Print(json::Document(responses), std::cout);
-    
+    return duration.count();
+}
+
+void ManualTest () {
+    TransportCatalogue catalogue;
+
+    int base_request_count;
+    std::cin >> base_request_count >> std::ws;
+
+    {
+        input_reader::InputReader reader;
+        for (int i = 0; i < base_request_count; ++ i) {
+            std::string line;
+            std::getline(std::cin, line);
+            reader.ParseLine(line);
+        }
+        reader.ApplyCommands(catalogue);
+    }
+
+    int stat_request_count;
+    std::cin >> stat_request_count >> std::ws;
+    for (int i = 0; i < stat_request_count; ++ i) {
+        std::string line;
+        std::getline(std::cin, line);
+        ParseAndPrintStat(catalogue, line, std::cout);
+    }
+}
+
+
+int main() {    
+    auto t = FileTest("tst1.txt", 18, 6);
+    std::cout << std::endl << t << std::endl;
+    //ManualTest();
     return 0;
 }
