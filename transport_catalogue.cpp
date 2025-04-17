@@ -19,10 +19,12 @@ void TransportCatalogue::AddStop (const std::string &stop_name, Coordinates coor
 
 void TransportCatalogue::AddBus (const std::string &route_id, const std::vector<std::string_view> &parsed_route, bool is_circular) {
     routes_.push_back({route_id, {}/*empty route*/, is_circular});
+    routes_.back().stops.reserve(parsed_route.size());
     for (const std::string_view &stop : parsed_route) {
         auto it = stop_name_to_stops_.find(stop);
         if (it != stop_name_to_stops_.end()) {
             routes_.back().stops.push_back(it->second);
+            buses_at_stop_[it->second->name].insert(routes_.back().route_id);
         } else {
             throw std::logic_error("Unknown stop in route: ["s + std::string(stop) + "]"s);
         }
@@ -75,7 +77,7 @@ ExtendedRouteInfo TransportCatalogue::GetExtendedRouteInfo (std::string_view rou
     auto it = route_id_to_route_.find(route_id);
 
     if (it == route_id_to_route_.end()) {
-        throw std::domain_error("Bus with id "s + std::string(route_id) + " not found. Data is corrupted.");
+        throw std::domain_error("Bus with id "s + std::string(route_id) + " not found. Data is corrupted."s);
     }
 
     auto route_info = route_info_.find(it->second->route_id);
@@ -145,33 +147,11 @@ ExtendedRouteInfo TransportCatalogue::GetExtendedRouteInfo (std::string_view rou
 
 const std::unordered_set<std::string_view>& TransportCatalogue::GetAllBusesByStop (std::string_view stop_name) {
     auto it = buses_at_stop_.find(stop_name);
-    if (it != buses_at_stop_.end()) {
-        return it->second;
+    if (it == buses_at_stop_.end()) {
+        auto wrk = stop_name_to_stops_.find(stop_name);
+        buses_at_stop_.emplace(wrk->second->name, std::unordered_set<std::string_view> {});
+        it = buses_at_stop_.find(stop_name);
     }
 
-    auto curr_stop = stop_name_to_stops_.find(stop_name);
-
-    if (curr_stop == stop_name_to_stops_.end()) {
-        throw std::domain_error("Stop with Name "s + std::string(stop_name) + " not found. Data is corrupted.");
-    }
-
-    std::string stop_name_str(stop_name);
-    for (const auto &route: routes_) {
-        auto stop_iter = std::find_if(route.stops.begin(), route.stops.end(),
-                                        [&stop_name_str](const Stop* stop)
-                                            {return stop->name == stop_name_str;}
-                                    );
-        if (stop_iter != route.stops.end()) {
-            buses_at_stop_[stop_name].insert(route.route_id);
-        }
-    }
-
-    auto result = buses_at_stop_.find(stop_name);
-    if (result == buses_at_stop_.end()) {
-        static std::unordered_set<std::string_view> empty_set;
-        buses_at_stop_[stop_name] = empty_set;
-        return buses_at_stop_.at(stop_name);
-    }
-
-    return result->second;
+    return it->second;
 }

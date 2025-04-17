@@ -7,7 +7,7 @@
 
 namespace print_detail {
 
-void PrintBusStat (const TransportCatalogue& tansport_catalogue,
+void PrintBusStat (TransportCatalogue& tansport_catalogue,
                    const std::string& route_id,
                    std::ostream& output);
 

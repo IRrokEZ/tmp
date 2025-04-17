@@ -57,7 +57,7 @@ std::vector<std::string_view> ParseRoute (std::string_view route) {
 
     std::vector<std::string_view> stops = Split(route, '-');
     std::vector<std::string_view> result(stops.begin(), stops.end());
-    result.insert(result.end(), std::next(stops.rbegin()), stops.rend());
+    result.insert(result.end(), stops.rbegin() + 1, stops.rend());
 
     return result;
 }
