@@ -1,0 +1,493 @@
+JsonReader json_doc(std::cin) : duration 
+json_doc.FillCatalogue(catalogue) : duration 
+const auto& render_settings = json_doc.GetRenderSettings().AsMap() : duration 
+const auto& renderer = json_doc.FillRenderSettings(render_settings) : duration 
+const auto& stat_requests = json_doc.GetStatRequests().AsArray() : duration 
+RequestHandler rh(catalogue, renderer) : duration 
+rh.ProcessRequests(stat_requests) : duration 
+
+
+
+
+
+
+
+JsonReader json_doc(std::cin) :4831
+json_doc.FillCatalogue(catalogue) :0
+const auto& render_settings = json_doc.GetRenderSettings().AsMap() :0
+const auto& renderer = json_doc.FillRenderSettings(render_settings) :0
+const auto& stat_requests = json_doc.GetStatRequests().AsArray() :0
+RequestHandler rh(catalogue, renderer) :0
+rh.ProcessRequests(stat_requests) :185
+
+
+
+
+
+
+
+JsonReader json_doc(std::cin) :20
+json_doc.FillCatalogue(catalogue) :4
+const auto& render_settings = json_doc.GetRenderSettings().AsMap() :0
+const auto& renderer = json_doc.FillRenderSettings(render_settings) :0
+const auto& stat_requests = json_doc.GetStatRequests().AsArray() :0
+RequestHandler rh(catalogue, renderer) :0
+rh.ProcessRequests(stat_requests) :15980
+
+
+
+
+
+
+
+JsonReader json_doc(std::cin) :22296
+json_doc.FillCatalogue(catalogue) :7186
+const auto& render_settings = json_doc.GetRenderSettings().AsMap() :0
+const auto& renderer = json_doc.FillRenderSettings(render_settings) :75
+const auto& stat_requests = json_doc.GetStatRequests().AsArray() :0
+RequestHandler rh(catalogue, renderer) :0
+rh.ProcessRequests(stat_requests) :553341
+
+
+
+
+
+
+
+JsonReader json_doc(std::cin) :562
+json_doc.FillCatalogue(catalogue) :52
+const auto& render_settings = json_doc.GetRenderSettings().AsMap() :0
+const auto& renderer = json_doc.FillRenderSettings(render_settings) :57
+const auto& stat_requests = json_doc.GetStatRequests().AsArray() :0
+RequestHandler rh(catalogue, renderer) :0
+rh.ProcessRequests(stat_requests) :701
+
+
+
+
+
+
+
+JsonReader json_doc(std::cin) :423
+json_doc.FillCatalogue(catalogue) :56
+const auto& render_settings = json_doc.GetRenderSettings().AsMap() :0
+const auto& renderer = json_doc.FillRenderSettings(render_settings) :56
+const auto& stat_requests = json_doc.GetStatRequests().AsArray() :0
+RequestHandler rh(catalogue, renderer) :0
+rh.ProcessRequests(stat_requests) :646
+
+
+
+
+
+
+
+JsonReader json_doc(std::cin) :522
+json_doc.FillCatalogue(catalogue) :58
+const auto& render_settings = json_doc.GetRenderSettings().AsMap() :0
+const auto& renderer = json_doc.FillRenderSettings(render_settings) :48
+const auto& stat_requests = json_doc.GetStatRequests().AsArray() :0
+RequestHandler rh(catalogue, renderer) :0
+rh.ProcessRequests(stat_requests) :857
+
+
+
+
+
+
+
+JsonReader json_doc(std::cin) :400
+json_doc.FillCatalogue(catalogue) :51
+const auto& render_settings = json_doc.GetRenderSettings().AsMap() :0
+const auto& renderer = json_doc.FillRenderSettings(render_settings) :44
+const auto& stat_requests = json_doc.GetStatRequests().AsArray() :0
+RequestHandler rh(catalogue, renderer) :0
+rh.ProcessRequests(stat_requests) :626
+
+
+
+
+
+
+
+JsonReader json_doc(std::cin) :401
+json_doc.FillCatalogue(catalogue) :56
+const auto& render_settings = json_doc.GetRenderSettings().AsMap() :0
+const auto& renderer = json_doc.FillRenderSettings(render_settings) :45
+const auto& stat_requests = json_doc.GetStatRequests().AsArray() :0
+RequestHandler rh(catalogue, renderer) :0
+rh.ProcessRequests(stat_requests) :659
+
+
+
+
+
+
+
+JsonReader json_doc(std::cin) :423
+json_doc.FillCatalogue(catalogue) :57
+const auto& render_settings = json_doc.GetRenderSettings().AsMap() :0
+const auto& renderer = json_doc.FillRenderSettings(render_settings) :46
+const auto& stat_requests = json_doc.GetStatRequests().AsArray() :0
+RequestHandler rh(catalogue, renderer) :0
+rh.ProcessRequests(stat_requests) :633
+
+
+
+
+
+
+
+JsonReader json_doc(std::cin) :21162
+json_doc.FillCatalogue(catalogue) :7390
+const auto& render_settings = json_doc.GetRenderSettings().AsMap() :0
+const auto& renderer = json_doc.FillRenderSettings(render_settings) :51
+const auto& stat_requests = json_doc.GetStatRequests().AsArray() :0
+RequestHandler rh(catalogue, renderer) :0
+rh.ProcessRequests(stat_requests) :730070
+
+
+
+
+
+
+
+JsonReader json_doc(std::cin) :20934
+json_doc.FillCatalogue(catalogue) :7263
+const auto& render_settings = json_doc.GetRenderSettings().AsMap() :0
+const auto& renderer = json_doc.FillRenderSettings(render_settings) :53
+const auto& stat_requests = json_doc.GetStatRequests().AsArray() :0
+RequestHandler rh(catalogue, renderer) :0
+rh.ProcessRequests(stat_requests) :723999
+
+
+
+
+
+
+
+JsonReader json_doc(std::cin) :20568
+json_doc.FillCatalogue(catalogue) :7058
+const auto& render_settings = json_doc.GetRenderSettings().AsMap() :0
+const auto& renderer = json_doc.FillRenderSettings(render_settings) :53
+const auto& stat_requests = json_doc.GetStatRequests().AsArray() :0
+RequestHandler rh(catalogue, renderer) :0
+rh.ProcessRequests(stat_requests) :720185
+
+
+
+
+
+
+
+JsonReader json_doc(std::cin) :262
+json_doc.FillCatalogue(catalogue) :53
+const auto& render_settings = json_doc.GetRenderSettings().AsMap() :0
+const auto& renderer = json_doc.FillRenderSettings(render_settings) :17
+const auto& stat_requests = json_doc.GetStatRequests().AsArray() :0
+RequestHandler rh(catalogue, renderer) :0
+rh.ProcessRequests(stat_requests) :354
+
+
+
+
+
+
+
+JsonReader json_doc(std::cin) :276
+json_doc.FillCatalogue(catalogue) :53
+const auto& render_settings = json_doc.GetRenderSettings().AsMap() :0
+const auto& renderer = json_doc.FillRenderSettings(render_settings) :16
+const auto& stat_requests = json_doc.GetStatRequests().AsArray() :0
+RequestHandler rh(catalogue, renderer) :0
+rh.ProcessRequests(stat_requests) :309
+
+
+
+
+
+
+
+JsonReader json_doc(std::cin) :226
+json_doc.FillCatalogue(catalogue) :39
+const auto& render_settings = json_doc.GetRenderSettings().AsMap() :0
+const auto& renderer = json_doc.FillRenderSettings(render_settings) :12
+const auto& stat_requests = json_doc.GetStatRequests().AsArray() :0
+RequestHandler rh(catalogue, renderer) :0
+rh.ProcessRequests(stat_requests) :340
+
+
+
+
+
+
+
+JsonReader json_doc(std::cin) :232
+json_doc.FillCatalogue(catalogue) :47
+const auto& render_settings = json_doc.GetRenderSettings().AsMap() :0
+const auto& renderer = json_doc.FillRenderSettings(render_settings) :14
+const auto& stat_requests = json_doc.GetStatRequests().AsArray() :0
+RequestHandler rh(catalogue, renderer) :0
+rh.ProcessRequests(stat_requests) :441
+
+
+
+
+
+
+
+JsonReader json_doc(std::cin) :274
+json_doc.FillCatalogue(catalogue) :54
+const auto& render_settings = json_doc.GetRenderSettings().AsMap() :0
+const auto& renderer = json_doc.FillRenderSettings(render_settings) :16
+const auto& stat_requests = json_doc.GetStatRequests().AsArray() :0
+RequestHandler rh(catalogue, renderer) :0
+rh.ProcessRequests(stat_requests) :355
+
+
+
+
+
+
+
+JsonReader json_doc(std::cin) :21600
+json_doc.FillCatalogue(catalogue) :7415
+const auto& render_settings = json_doc.GetRenderSettings().AsMap() :0
+const auto& renderer = json_doc.FillRenderSettings(render_settings) :56
+const auto& stat_requests = json_doc.GetStatRequests().AsArray() :0
+RequestHandler rh(catalogue, renderer) :0
+rh.ProcessRequests(stat_requests) :765790
+
+
+
+
+
+
+
+JsonReader json_doc(std::cin) :221
+json_doc.FillCatalogue(catalogue) :45
+const auto& render_settings = json_doc.GetRenderSettings().AsMap() :0
+const auto& renderer = json_doc.FillRenderSettings(render_settings) :15
+const auto& stat_requests = json_doc.GetStatRequests().AsArray() :0
+RequestHandler rh(catalogue, renderer) :0
+rh.ProcessRequests(stat_requests) :344
+
+
+
+
+
+
+
+JsonReader json_doc(std::cin) :21005
+json_doc.FillCatalogue(catalogue) :7125
+const auto& render_settings = json_doc.GetRenderSettings().AsMap() :0
+const auto& renderer = json_doc.FillRenderSettings(render_settings) :56
+const auto& stat_requests = json_doc.GetStatRequests().AsArray() :0
+RequestHandler rh(catalogue, renderer) :0
+rh.ProcessRequests(stat_requests) :792191
+
+
+
+
+
+
+
+JsonReader json_doc(std::cin) :20593
+json_doc.FillCatalogue(catalogue) :7272
+const auto& render_settings = json_doc.GetRenderSettings().AsMap() :0
+const auto& renderer = json_doc.FillRenderSettings(render_settings) :51
+const auto& stat_requests = json_doc.GetStatRequests().AsArray() :0
+RequestHandler rh(catalogue, renderer) :0
+rh.ProcessRequests(stat_requests) :784938
+
+
+
+
+
+
+
+JsonReader json_doc(std::cin) :21517
+json_doc.FillCatalogue(catalogue) :7251
+const auto& render_settings = json_doc.GetRenderSettings().AsMap() :0
+const auto& renderer = json_doc.FillRenderSettings(render_settings) :52
+const auto& stat_requests = json_doc.GetStatRequests().AsArray() :0
+RequestHandler rh(catalogue, renderer) :0
+rh.ProcessRequests(stat_requests) :776751
+
+
+
+
+
+
+
+JsonReader json_doc(std::cin) :20706
+json_doc.FillCatalogue(catalogue) :8904
+const auto& render_settings = json_doc.GetRenderSettings().AsMap() :0
+const auto& renderer = json_doc.FillRenderSettings(render_settings) :53
+const auto& stat_requests = json_doc.GetStatRequests().AsArray() :0
+RequestHandler rh(catalogue, renderer) :0
+rh.ProcessRequests(stat_requests) :782242
+
+
+
+
+
+
+
+JsonReader json_doc(std::cin) :21646
+json_doc.FillCatalogue(catalogue) :7156
+const auto& render_settings = json_doc.GetRenderSettings().AsMap() :0
+const auto& renderer = json_doc.FillRenderSettings(render_settings) :52
+const auto& stat_requests = json_doc.GetStatRequests().AsArray() :0
+RequestHandler rh(catalogue, renderer) :0
+rh.ProcessRequests(stat_requests) :751211
+
+
+
+
+
+
+
+2025-06-01 01:21:06
+JsonReader json_doc(std::cin) :20981
+json_doc.FillCatalogue(catalogue) :7191
+const auto& render_settings = json_doc.GetRenderSettings().AsMap() :0
+const auto& renderer = json_doc.FillRenderSettings(render_settings) :47
+const auto& stat_requests = json_doc.GetStatRequests().AsArray() :0
+RequestHandler rh(catalogue, renderer) :0
+rh.ProcessRequests(stat_requests) :749105
+
+
+
+2025-06-01 04:21:58
+JsonReader json_doc(std::cin) :19924
+json_doc.FillCatalogue(catalogue) :7090
+const auto& render_settings = json_doc.GetRenderSettings().AsMap() :0
+const auto& renderer = json_doc.FillRenderSettings(render_settings) :47
+const auto& stat_requests = json_doc.GetStatRequests().AsArray() :0
+RequestHandler rh(catalogue, renderer) :0
+rh.ProcessRequests(stat_requests) :748583
+
+
+
+2025-06-01 04:44:17
+JsonReader json_doc(std::cin) :21442
+json_doc.FillCatalogue(catalogue) :7025
+const auto& render_settings = json_doc.GetRenderSettings().AsMap() :0
+const auto& renderer = json_doc.FillRenderSettings(render_settings) :39
+const auto& stat_requests = json_doc.GetStatRequests().AsArray() :0
+RequestHandler rh(catalogue, renderer) :0
+rh.ProcessRequests(stat_requests) :753068
+
+
+
+2025-06-01 05:18:26
+JsonReader json_doc(std::cin) :21516
+json_doc.FillCatalogue(catalogue) :7134
+const auto& render_settings = json_doc.GetRenderSettings().AsMap() :0
+const auto& renderer = json_doc.FillRenderSettings(render_settings) :40
+const auto& stat_requests = json_doc.GetStatRequests().AsArray() :0
+RequestHandler rh(catalogue, renderer) :0
+rh.ProcessRequests(stat_requests) :748089
+
+
+
+2025-06-04 23:17:16
+JsonReader json_doc(std::cin) :455
+json_doc.FillCatalogue(catalogue) :68
+const auto& render_settings = json_doc.GetRenderSettings().AsMap() :0
+const auto& renderer = json_doc.FillRenderSettings(render_settings) :38
+const auto& stat_requests = json_doc.GetStatRequests().AsArray() :0
+RequestHandler rh(catalogue, renderer) :0
+rh.ProcessRequests(stat_requests) :733
+
+
+
+2025-06-04 23:24:31
+JsonReader json_doc(std::cin) :20404
+json_doc.FillCatalogue(catalogue) :7150
+const auto& render_settings = json_doc.GetRenderSettings().AsMap() :0
+const auto& renderer = json_doc.FillRenderSettings(render_settings) :43
+const auto& stat_requests = json_doc.GetStatRequests().AsArray() :0
+RequestHandler rh(catalogue, renderer) :0
+rh.ProcessRequests(stat_requests) :887267
+
+
+
+2025-06-26 05:16:22
+JsonReader json_doc(std::cin) :21353
+json_doc.FillCatalogue(catalogue) :7148
+const auto& render_settings = json_doc.GetRenderSettings().AsMap() :0
+const auto& renderer = json_doc.FillRenderSettings(render_settings) :39
+const auto& stat_requests = json_doc.GetStatRequests().AsArray() :0
+RequestHandler rh(catalogue, renderer) :0
+rh.ProcessRequests(stat_requests) :669767
+
+
+
+2025-06-26 05:30:32
+JsonReader json_doc(std::cin) :20756
+json_doc.FillCatalogue(catalogue) :6921
+const auto& render_settings = json_doc.GetRenderSettings().AsMap() :0
+const auto& renderer = json_doc.FillRenderSettings(render_settings) :35
+const auto& stat_requests = json_doc.GetStatRequests().AsArray() :0
+RequestHandler rh(catalogue, renderer) :0
+rh.ProcessRequests(stat_requests) :672945
+
+
+
+2025-06-12 19:39:49
+JsonReader json_doc(std::cin) :36212
+json_doc.FillCatalogue(catalogue) :10446
+const auto& render_settings = json_doc.GetRenderSettings().AsMap() :0
+const auto& renderer = json_doc.FillRenderSettings(render_settings) :50
+const auto& stat_requests = json_doc.GetStatRequests().AsArray() :0
+RequestHandler rh(catalogue, renderer) :0
+rh.ProcessRequests(stat_requests) :1274165
+
+
+
+2025-06-13 00:18:56
+JsonReader json_doc(std::cin) :730
+json_doc.FillCatalogue(catalogue) :78
+const auto& render_settings = json_doc.GetRenderSettings().AsMap() :0
+const auto& renderer = json_doc.FillRenderSettings(render_settings) :39
+const auto& stat_requests = json_doc.GetStatRequests().AsArray() :0
+RequestHandler rh(catalogue, renderer) :0
+rh.ProcessRequests(stat_requests) :848
+
+
+
+2025-06-26 16:05:02
+JsonReader json_doc(std::cin) :398
+json_doc.FillCatalogue(catalogue) :59
+const auto& render_settings = json_doc.GetRenderSettings().AsMap() :0
+const auto& renderer = json_doc.FillRenderSettings(render_settings) :30
+const auto& stat_requests = json_doc.GetStatRequests().AsArray() :0
+RequestHandler rh(catalogue, renderer) :0
+rh.ProcessRequests(stat_requests) :673
+
+
+
+2025-06-26 16:08:19
+JsonReader json_doc(std::cin) :442
+json_doc.FillCatalogue(catalogue) :76
+const auto& render_settings = json_doc.GetRenderSettings().AsMap() :0
+const auto& renderer = json_doc.FillRenderSettings(render_settings) :40
+const auto& stat_requests = json_doc.GetStatRequests().AsArray() :0
+RequestHandler rh(catalogue, renderer) :0
+rh.ProcessRequests(stat_requests) :704
+
+
+
+2025-06-26 16:10:20
+JsonReader json_doc(std::cin) :382
+json_doc.FillCatalogue(catalogue) :65
+const auto& render_settings = json_doc.GetRenderSettings().AsMap() :0
+const auto& renderer = json_doc.FillRenderSettings(render_settings) :34
+const auto& stat_requests = json_doc.GetStatRequests().AsArray() :0
+RequestHandler rh(catalogue, renderer) :0
+rh.ProcessRequests(stat_requests) :638
+
+
+

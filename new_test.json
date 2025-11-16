@@ -1,0 +1,134 @@
+{
+  "base_requests": [
+    {
+      "type": "Stop",
+      "name": "Moscow",
+      "latitude": 55.7558,
+      "longitude": 37.6173
+    },
+    {
+      "type": "Stop",
+      "name": "EquatorZero",
+      "latitude": 0,
+      "longitude": 0
+    },
+    {
+      "type": "Stop",
+      "name": "NorthPole",
+      "latitude": 90,
+      "longitude": 0
+    },
+    {
+      "type": "Stop",
+      "name": "SouthPole",
+      "latitude": -90,
+      "longitude": 180
+    },
+    {
+      "type": "Stop",
+      "name": "NegativeCoords",
+      "latitude": -45.1234,
+      "longitude": -120.9876
+    },
+    {
+      "type": "Stop",
+      "name": "ScientificNotation",
+      "latitude": -123.456e-2,
+      "longitude": 789.012E+3
+    },
+    {
+      "type": "Stop",
+      "name": "RoundTripStop",
+      "latitude": 42,
+      "longitude": -71
+    },
+    {
+      "type": "Stop",
+      "name": "AnotherStop",
+      "latitude": 42.0,
+      "longitude": -71.0,
+      "road_distances": {
+        "Moscow": 100000
+      }
+    },
+    {
+      "type": "Stop",
+      "name": "EmptyDistanceStop",
+      "latitude": 10,
+      "longitude": 20
+    },
+    {
+      "type": "Bus",
+      "name": "CircularRoute",
+      "stops": ["Moscow", "EquatorZero", "NorthPole"],
+      "is_roundtrip": true
+    },
+    {
+      "type": "Bus",
+      "name": "LinearRoute",
+      "stops": ["SouthPole", "NegativeCoords", "ScientificNotation"],
+      "is_roundtrip": false
+    },
+    {
+      "type": "Bus",
+      "name": "ShortRoute",
+      "stops": ["Moscow", "AnotherStop"],
+      "is_roundtrip": false
+    }
+  ],
+  "stat_requests": [
+    {
+      "type": "Stop",
+      "name": "Moscow",
+      "id": 1
+    },
+    {
+      "type": "Stop",
+      "name": "EmptyDistanceStop",
+      "id": 2
+    },
+    {
+      "type": "Stop",
+      "name": "UnknownStop",
+      "id": 3
+    },
+    {
+      "type": "Bus",
+      "name": "CircularRoute",
+      "id": 4
+    },
+    {
+      "type": "Bus",
+      "name": "LinearRoute",
+      "id": 5
+    },
+    {
+      "type": "Bus",
+      "name": "UnknownBus",
+      "id": 6
+    },
+    {
+      "type": "Bus",
+      "name": "ShortRoute",
+      "id": 7
+    },
+    {
+      "type": "Map",
+      "id": 8
+    }
+  ],
+  "render_settings": {
+    "width": 1000,
+    "height": 800,
+    "padding": 50,
+    "stop_radius": 5,
+    "line_width": 2,
+    "bus_label_font_size": 20,
+    "bus_label_offset": [5, 5],
+    "stop_label_font_size": 14,
+    "stop_label_offset": [3, 3],
+    "underlayer_color": "white",
+    "underlayer_width": 3,
+    "color_palette": ["red", "blue", "green"]
+  }
+}
